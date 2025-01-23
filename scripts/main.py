@@ -3,7 +3,7 @@ from sys import exit
 
 pygame.init()
 #Screen
-screen = pygame.display.set_mode((0,0), pygame.FULLSCREEN)
+screen = pygame.display.set_mode((0,0))
 clock = pygame.time.Clock()
 height, width = screen.get_size()
 
