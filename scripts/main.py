@@ -3,7 +3,7 @@ from sys import exit
 
 pygame.init()
 #Screen
-screen = pygame.display.set_mode((0,0))
+screen = pygame.display.set_mode((0,0), pygame.FULLSCREEN)
 clock = pygame.time.Clock()
 height, width = screen.get_size()
 
@@ -25,11 +25,11 @@ surface_title = pygame.transform.scale(surface_load_title,(height//1.5,width//1.
 rect_title = surface_title.get_rect(center = (height//2,width//3))
 
 #Play
-surface_play = font.render('Jugar', False, white)
+surface_play = font.render('Play', False, white)
 rect_play = surface_play.get_rect(center = (height//2,width//1.4))
 
 #Exit
-surface_exit = font.render('Salir', False, white)
+surface_exit = font.render('Exit', False, white)
 rect_exit = surface_exit.get_rect(center = (height//2, width//1.2))
 
 
